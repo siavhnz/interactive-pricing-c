@@ -34,13 +34,13 @@ Here are the different page view ranges and the corresponding monthly price tota
 
 ### Screenshot
 
-![screenshot](./)
+![screenshot](./screenshot/screenshot.png)
 
 ### Links
 
-- Solution: [frontendmentor.io](https://www.frontendmentor.io/?)
+- Solution: [frontendmentor.io](https://www.frontendmentor.io/solutions/interactive-pricing-component-eqHaMS8lZp)
 
-- Live Site: [cloudflare](https://?.pages.dev/)
+- Live Site: [cloudflare](https://interactive-pricing-c.pages.dev/)
 
 ## My process
 
@@ -56,6 +56,7 @@ Here are the different page view ranges and the corresponding monthly price tota
 
 - [React](https://react.dev)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Mui Material UI](https://mui.com/material-ui/)
 
 ## Author
 
