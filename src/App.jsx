@@ -1,10 +1,11 @@
-
+import Trial from "./components/StartTrial/Trial";
 
 function App() {
-
   return (
-   <>Interactive Pricing Component</>
-  )
+    <main>
+      <Trial />
+    </main>
+  );
 }
 
-export default App
+export default App;

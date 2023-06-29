@@ -9,6 +9,7 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
+  - [Work time](#work-time)
   - [Built with](#built-with)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
@@ -23,6 +24,14 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Use the slider and toggle to see prices for different page view numbers
 
+Here are the different page view ranges and the corresponding monthly price totals:
+
+- 10K pageviews / $8 per month
+- 50K pageviews / $12 per month
+- 100K pageviews / $16 per month
+- 500k pageviews / $24 per month
+- 1M pageviews / $36 per month
+
 ### Screenshot
 
 ![screenshot](./)
@@ -35,13 +44,17 @@ Users should be able to:
 
 ## My process
 
+- 1.Download assets, Install Vite & TailwindCss, Initialize git, README.md, Prepare project
+- 2.work on pricing component
+- 3.Write README.md, Push to github, Make it live on Cloudflare, Publish to frontendmentor
+
 ### Work Time
 
-- [My Clockify Report](https://app.clockify.me/shared/?)
+- [My Clockify Report](https://app.clockify.me/shared/649d9dfb1b8eae3a79004324)
 
 ### Built with
 
-- [React](https:react.dev)
+- [React](https://react.dev)
 - [Tailwind CSS](https://tailwindcss.com/)
 
 ## Author
@@ -54,6 +67,6 @@ Users should be able to:
 
 Thanks To
 
-[Frontendmentor.io](https://www.frontendmentor.io/challenges) - for their Excitement challenges  
+[Frontendmentor.io](https://www.frontendmentor.io/challenges) - for their Excitement challenges
 
 [Perfect Pixel](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en) - for such a great extension
