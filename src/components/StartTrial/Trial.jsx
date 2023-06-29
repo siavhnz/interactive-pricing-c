@@ -8,7 +8,7 @@ import CheckItem from "./CheckItem";
 
 const Trial = () => {
   const [state, dispatch] = useReducer(trailReducer, initialState);
-  const { sliderValue, price, periodOfPlan } = { ...state };
+  const { sliderValue, price, billingPeriod } = { ...state };
 
   const handleSliderChange = (newValue) => {
     dispatch({
@@ -18,13 +18,23 @@ const Trial = () => {
   };
 
   const handleBillingPeriod = (newValue) => {
+    let value = newValue;
+
+    if (newValue === true) {
+      value = CONSTANT_VALUES.BILLING_PERIOD.YEARLY;
+    } else if (newValue === false) {
+      value = CONSTANT_VALUES.BILLING_PERIOD.MONTHLY;
+    }
+
+    console.log(value);
+
     dispatch({
       type: CONSTANT_VALUES.ACION.CHANGE_BILLING_PERIOD,
-      payload: newValue
-        ? CONSTANT_VALUES.BILLING_PERIOD.YEARLY
-        : CONSTANT_VALUES.BILLING_PERIOD.MONTHLY,
+      payload: value,
     });
   };
+
+  console.log(state);
 
   return (
     <section className="mt-60 font-Manrope bg-pattern-circle bg-no-repeat bg-top sm:mt-68">
@@ -49,7 +59,7 @@ const Trial = () => {
             </span>
             <span className="text-14 text-grayish-blue sm:text-16 sm:font-semibold">
               /{" "}
-              {periodOfPlan === CONSTANT_VALUES.BILLING_PERIOD.MONTHLY
+              {billingPeriod === CONSTANT_VALUES.BILLING_PERIOD.MONTHLY
                 ? "month"
                 : "year"}
             </span>
@@ -68,7 +78,7 @@ const Trial = () => {
           </button>
           <IOSSwitch
             inputProps={{ "aria-label": "click to change billing plan" }}
-            checked={periodOfPlan === CONSTANT_VALUES.BILLING_PERIOD.YEARLY}
+            checked={billingPeriod === CONSTANT_VALUES.BILLING_PERIOD.YEARLY}
             onChange={(e) => handleBillingPeriod(e.target.checked)}
           />
           <div className="flex gap-x-8">
