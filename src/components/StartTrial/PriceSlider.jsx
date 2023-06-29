@@ -7,6 +7,13 @@ const PriceSlider = ({ handleSliderChange }) => {
     return value;
   }
 
+  const marks = [
+    { value: 1 },
+    { value: 5 },
+    { value: 10 },
+    { value: 50 },
+    { value: 100 },
+  ];
   return (
     <CustomSlider
       aria-label="select price"
@@ -14,8 +21,10 @@ const PriceSlider = ({ handleSliderChange }) => {
       onChange={(e) => handleSliderChange(e.target.value)}
       slots={{ thumb: SliderThumbComponent }}
       getAriaValueText={valuetext}
-      step={1}
+      step={null}
       min={1}
+      max={100}
+      marks={marks}
     />
   );
 };
